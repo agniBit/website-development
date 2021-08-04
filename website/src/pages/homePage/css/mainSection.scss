@@ -1,0 +1,63 @@
+.mainSection{
+    background-color: rgb(219, 143, 229);
+    height: 90vh;
+    width: 86vw;
+    padding: 5vh 7vw;
+    .mainSectionWrapper{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        .textBox{
+            flex: 2;
+        }
+        .imageContainer{
+            flex:3;
+            height: 100%;
+            width: 100%;
+            .imageBox {
+                z-index:3;
+                position: absolute;
+                width: 50vw;
+                right: 8vw;
+                bottom: 12vh;
+                height: auto;
+                border-radius: 20px;
+                overflow: hidden;
+                padding: 5px;
+                background-color: white;
+                box-shadow: 10px 7px 38px -13px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 10px 7px 38px -13px rgba(0,0,0,0.75);
+                -moz-box-shadow: 10px 7px 38px -13px rgba(0,0,0,0.75);
+                .webImage {
+                    bottom: 0px;
+                    border-radius: 20px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .mobileImageWrapper{
+            z-index:4;
+            position: absolute;
+            border-radius: 20px;
+            right: 7vw;
+            bottom: 14vh;
+            padding: 5px;
+            background-color: white;
+            .mobileImage {
+                background-color: green;
+                box-shadow: 10px 7px 38px -13px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 10px 7px 38px -13px rgba(0,0,0,0.75);
+                -moz-box-shadow: 10px 7px 38px -13px rgba(0,0,0,0.75);
+                
+                border-radius: 20px;
+                
+                width: auto;
+                height: 65vh;
+            }
+        }
+        
+    }
+}
